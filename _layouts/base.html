@@ -9,18 +9,26 @@
 
   <!-- Fonts by google fonts -->
   <link href="//fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:,100,200,300,400,500,600,700,800,900|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-  <!-- Css theme   http://www.themezaa.com/html/pofo/home-creative-business.html -->
-  <link rel="stylesheet" href="{% asset_path 'css/bootstrap.min.css' %}" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="{% asset_path 'css/font-awesome.min.css' %}" type="text/css">
   <!-- css responsive theme -->
   <link rel="stylesheet" href="{% asset_path 'css/tiz.css' %}" type="text/css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/2.0.13/plyr.css">
 </head>
 <body class="">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     {% include nav.html %}
       {{ content }}
-    <!-- js theme -->
-   <script type="text/javascript" src="{% asset_path 'js/jquery.js' %}"></script>
-   <script type="text/javascript" src="{% asset_path 'js/bootstrap.min.js' %}"></script>
+      <!-- js theme -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/2.0.18/plyr.js"></script>
+<script src="{%asset_path 'js/custom.js'%}"></script>
   </body>
   </html>
