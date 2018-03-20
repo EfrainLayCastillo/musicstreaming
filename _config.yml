@@ -1,0 +1,66 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Music Streaming
+email: 
+tlf: 
+tlf_url: 
+fax: 
+address:
+  location:
+  street:
+  city:
+baseurl: "" # the subpath of your site, e.g. /blog
+url:
+host: 0.0.0.0
+port: 8000
+# Server Config options
+#livereload: true     # You no longer need to include --livereload
+#reload_port: 5678    # If you don't want to use the default port
+# Build settings
+# Page Generator
+page_gen-dirs: true # uncomment, if you prefer to generate named folders
+# Build setting
+markdown: kramdown
+plugins:
+  - jekyll-contentblocks
+  - jekyll-assets
+  # - jekyll-multiple-languages-plugin
+  - uglifier
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - s3_website.yml
+  - README.md
+  - node_modules
+
+# Assets Configuration
+assets:
+  cache: .asset-cache
+  prefix: "/assets"
+  compress:
+    css: false
+    js: false
+  assets:
+    - "*"
+  sources:
+    - _assets
+    - _assets/js
+    - _assets/css
+    - _assets/img
+    - _assets/fonts
+    - _assets/webfonts
+  features:
+    automatic_img_size: false
